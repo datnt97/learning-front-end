@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    /* .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        align-items: center;
+
+        height: 250px;
+        border: 1px red solid;
+        background-color: #DDD;
+    } */
+
+    /* .child {
+        display: flex;
+        align-items: center;
+    } */
+
+    .container {
+        display: flex;
+    }
+
+    .child-1 {
+        background-color: red;
+        flex-grow: 1
+    }
+
+    .child-2 {
+        flex-grow: 1;
+        background-color: blue;
+    }
+
+    .container-swap .child-1 {
+        order: 1;
+    }
+
+    .weekly-item {
+        display: flex;
+        width: 350px;
+        height: 80px;
+
+        border-bottom: 1px solid #ddd;
+    }
+
+    .weekly-item__number {
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .weekly-item__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        flex-grow: 1;
+
+
+    }
+
+    .weekly-item__song-title {
+        text-transform: capitalize;
+    }
+
+    .weekly-item__view-count {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: #999;
+    }
+
+    .weekly-album {
+        height: 128px;
+        width: 128px;
+        display: flex;
+
+        background-image: url("https://loremflickr.com/320/240?lock=1");
+        background-position: center;
+        background-size: cover;
+
+    }
+
+    .weekly-album__overlay {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        align-items: flex-end;
+        
+        background: rgb(2, 0, 36);
+        background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(4, 2, 31, 0) 78%, rgba(10, 10, 10, 0.002320185614849146) 78%, rgba(251, 253, 254, 1) 100%);
+
+    }
+
+    .weekly-album__number {
+        padding: 10px;
+        color: azure;
+    }
+</style>
+
+<body>
+    <!-- <div class="container">
+        <div class="child">Child 1</div>
+        <div class="child">Child 2</div>
+        <div class="child">Child 3</div>
+    </div>
+
+    <div class="container">
+        <div class="child-1">Child 1</div>
+        <div class="child-2">Child 2</div>
+    </div>
+    <div class="container container-swap">
+        <div class="child-1">Child 1</div>
+        <div class="child-2">Child 2</div>
+    </div> -->
+
+
+    <div class="weekly-item">
+        <div class="weekly-item__number">
+            02
+        </div>
+        <div class="weekly-item__info">
+            <div class="weekly-item__song-title">Gửi anh và cô ấy</div>
+            <div class="weekly-item__singer">Hương tràm</div>
+        </div>
+        <div class="weekly-item__view-count">
+            2291
+        </div>
+    </div>
+
+    <div class="weekly-album">
+        <div class="weekly-album__overlay">
+            <span class="weekly-album__number">02</span>
+        </div>
+    </div>
+</body>
+
+</html>
