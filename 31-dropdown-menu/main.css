@@ -1,0 +1,66 @@
+body {
+  width: 100;
+  height: 1000px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+  padding: 0px;
+
+  background-color: black;
+
+  list-style-type: none;
+}
+
+.menu--sub {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  flex-direction: column;
+  visibility: hidden;
+}
+
+.has-submenu:hover .menu--sub {
+  visibility: visible;
+}
+
+.menu__item {
+  width: 128px;
+  height: 80px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.5rem;
+  
+  list-style-type: none;
+}
+
+.menu__item:hover {
+    background-color: azure;
+}
+
+.menu__item:hover a {
+    color: black;
+}
+
+.menu__item a {
+    color: white;
+    text-decoration: none;
+}
+
+.has-submenu {
+  position: relative;
+}

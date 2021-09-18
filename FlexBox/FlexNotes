@@ -1,0 +1,7 @@
+display: flex;
+flex-direction: row | column
+justify-content: flex-start
+align-items: center;
+flex-basis
+flex-shrink => formula
+order

@@ -1,0 +1,23 @@
+{
+  "name": "mastercss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:zing": "sass zing-mp3/scss/main.scss zing-mp3/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datnt97/MasterCSS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/datnt97/MasterCSS/issues"
+  },
+  "homepage": "https://github.com/datnt97/MasterCSS#readme",
+  "dependencies": {
+    "sass": "^1.39.0"
+  }
+}
