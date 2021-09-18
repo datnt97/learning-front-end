@@ -1,0 +1,64 @@
+.icon-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    width: 6rem;
+    height: 100%;
+    margin: 0;
+
+    display: block;
+    text-align: center;
+    justify-content: stretch;
+    
+    background-color: #22577A;
+    color: #fff;
+    
+}
+
+.icon-bar__vertical {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    justify-items: stretch;
+    
+}
+
+.icon-bar__vertical > i {
+    height: 6rem;
+    margin: 10px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+
+    font-size: 3rem;
+}
+
+.icon-bar__vertical > i:first-child {
+    margin-top: 0;
+}
+
+.icon-bar__vertical > i:hover {
+    background-color: #000;
+}
+
+
+.navbar {
+    width: 100%;
+    height: 5rem;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-items: stretch;
+    align-content: center;
+    flex-wrap: wrap;
+
+}
+
+.navbar > i {
+    width: 8rem;
+    margin: 0 10px;
+}
