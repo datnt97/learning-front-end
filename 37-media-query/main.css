@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    min-width: 200px;
+    min-height: 150px;
+
+    text-align: center;
+    vertical-align: center;
+
+    border: 1px solid #000;
+
+    background-color: #DDD;
+}
+
+@media (min-width: 600px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .item {
+        flex-grow:1;
+    }
+}
+
+.center {
+    padding: 70px 0;
+    border: 3px solid green;
+    text-align: center;
+}

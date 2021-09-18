@@ -6,111 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/FlexBox/main.css" type="text/css">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
 </head>
 
-<style>
-    /* .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-
-        align-items: center;
-
-        height: 250px;
-        border: 1px red solid;
-        background-color: #DDD;
-    } */
-
-    /* .child {
-        display: flex;
-        align-items: center;
-    } */
-
-    .container {
-        display: flex;
-    }
-
-    .child-1 {
-        background-color: red;
-        flex-grow: 1
-    }
-
-    .child-2 {
-        flex-grow: 1;
-        background-color: blue;
-    }
-
-    .container-swap .child-1 {
-        order: 1;
-    }
-
-    .weekly-item {
-        display: flex;
-        width: 350px;
-        height: 80px;
-
-        border-bottom: 1px solid #ddd;
-    }
-
-    .weekly-item__number {
-        width: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .weekly-item__info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        flex-grow: 1;
-
-
-    }
-
-    .weekly-item__song-title {
-        text-transform: capitalize;
-    }
-
-    .weekly-item__view-count {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        color: #999;
-    }
-
-    .weekly-album {
-        height: 128px;
-        width: 128px;
-        display: flex;
-
-        background-image: url("https://loremflickr.com/320/240?lock=1");
-        background-position: center;
-        background-size: cover;
-
-    }
-
-    .weekly-album__overlay {
-        width: 100%;
-        height: 100%;
-
-        display: flex;
-        align-items: flex-end;
-        
-        background: rgb(2, 0, 36);
-        background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(4, 2, 31, 0) 78%, rgba(10, 10, 10, 0.002320185614849146) 78%, rgba(251, 253, 254, 1) 100%);
-
-    }
-
-    .weekly-album__number {
-        padding: 10px;
-        color: azure;
-    }
-</style>
-
 <body>
+    <!-- CodersTokyo -->
+
     <!-- <div class="container">
         <div class="child">Child 1</div>
         <div class="child">Child 2</div>
@@ -145,6 +59,24 @@
             <span class="weekly-album__number">02</span>
         </div>
     </div>
+
+    <!-- Lesson 27 -->
+    <div class="album-animation">
+        <div class="album-animation__overlay">
+            <i class="fas fa-play"></i>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="position-item">1</div>
+        <div class="position-item">2</div>
+        <div class="position-item">3</div>
+        <div class="position-item">4</div>
+        <div class="position-item">5</div>
+    </div>
+
 </body>
 
 </html>
