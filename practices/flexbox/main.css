@@ -94,3 +94,12 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 768px) {
+    .header,
+    .sidebar,
+    .main,
+    .footer {
+        flex: 100%;
+    }
+}
