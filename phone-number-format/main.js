@@ -46,22 +46,27 @@ const isModifierKey = (event) =>
 		key === DELETE_CODE ||
 
 		// Allow Ctrl/Command + A,C,V,X,Z
-		event.metaKey === true ||
-		event.ctrlKey == true ||
-		key === CHAR_A_CODE ||
-		key === CHAR_C_CODE ||
-		key === CHAR_V_CODE ||
-		key === CHAR_X_CODE ||
-		key === CHAR_Z_CODE ||
+		(event.metaKey === true || event.ctrlKey == true) && (
+			key === CHAR_A_CODE ||
+			key === CHAR_C_CODE ||
+			key === CHAR_V_CODE ||
+			key === CHAR_X_CODE ||
+			key === CHAR_Z_CODE) ||
 
 		// Allow left, up, right, down
 		(key >= ARROW_LEFT_CODE && key <= ARROW_DOWN_CODE);
+
+	if (event.shiftKey === true && (key >= CHAR_A_CODE && key <= CHAR_Z_CODE))
+	{
+		return false;
+	}
 
 	return result;
 }
 
 const enforceFormat = (event) =>
 {
+	console.log(event.shiftKey, event);
 	// Conditions: Input must be of a valid number format or a modifier key, and not longer than ten digits
 	if (!isNumericInput(event) && !isModifierKey(event))
 	{
@@ -74,6 +79,11 @@ const formatToPhone = (event) =>
 	if (isModifierKey(event)) return;
 
 	const inputValue = event.target.value.replace(/\D/g, '').substring(0, 10);
+
+	if (inputValue.length <= 0)
+	{
+		event.target.value = inputValue;
+	}
 
 	const areaCode = inputValue.substring(0, 3);
 	const numbersMiddle = inputValue.substring(3, 6);
